@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfLab3
+namespace WpfLab2
 {
     class MobilePhone : Phone
     {

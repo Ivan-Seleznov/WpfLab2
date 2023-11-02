@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfLab3
+namespace WpfLab2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
