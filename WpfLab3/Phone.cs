@@ -10,7 +10,7 @@ namespace WpfLab2
     {
         public Phone() 
         {
-            numberOfFunctions = 0;
+            NumberOfFunctions = 0;
         }
 
         public Phone(int functionsNumber)
@@ -20,15 +20,14 @@ namespace WpfLab2
                 throw new Exception("numberOfFunctions must be > 0");
             }
 
-            numberOfFunctions = functionsNumber;
+            NumberOfFunctions = functionsNumber;
         }
 
         public virtual double CalculateCost()
         {
-            return 40 * Math.Log(numberOfFunctions);
+            return 40 * Math.Log(NumberOfFunctions);
         }
 
-
-        protected int numberOfFunctions;
+        public int NumberOfFunctions { get; private set; }
     }
 }
