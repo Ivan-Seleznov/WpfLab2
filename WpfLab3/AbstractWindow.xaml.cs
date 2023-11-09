@@ -39,12 +39,15 @@ namespace WpfLab2
                 PrintedProduct[] printedProducts = new PrintedProduct[n];
                 for (int i = 0; i < printedProducts.Length; i++) 
                 {
+                    
                     var rand = new Random();
-                    printedProducts[i] = new Magazine($"test {i + 1}", rand.Next(0,2000), rand.Next(0, 6000));
-
-                    if ((i + 1) < printedProducts.Length)
+                    if (i % 2 == 0)
                     {
-                        printedProducts[i + 1] = new Newspaper($"test {i + 2}", rand.Next(0, 2000), rand.Next(0, 200), rand.Next(0, 6000));
+                        printedProducts[i] = new Magazine($"test {i + 1}", rand.Next(0, 2000), rand.Next(0, 6000));
+                    }
+                    else
+                    {
+                        printedProducts[i] = new Newspaper($"test {i + 1}", rand.Next(0, 2000), rand.Next(0, 200), rand.Next(0, 6000));
                     }
                 }
 
@@ -65,5 +68,6 @@ namespace WpfLab2
             }
         }
 
+ 
     }
 }
