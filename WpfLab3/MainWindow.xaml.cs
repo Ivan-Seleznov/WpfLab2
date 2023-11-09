@@ -30,5 +30,11 @@ namespace WpfLab2
             InheritanceWindow inheritanceWindow = new InheritanceWindow();
             inheritanceWindow.Show();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            AbstractWindow abstractWindow = new AbstractWindow();
+            abstractWindow.Show();
+        }
     }
 }

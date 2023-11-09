@@ -8,9 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu>
-            <MenuItem Header="Inheritance" Height="42" Width="71" Click="MenuItem_Click">
-
-            </MenuItem>
+            <MenuItem Header="Inheritance" Height="42" Width="71" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Header="Abstract" Height="42" Width="71" Click="MenuItem_Click_1"></MenuItem>
         </Menu>
 
     </Grid>

@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfLab2
+namespace WpfLab2.Lab2
 {
     class MobilePhone : Phone
     {
-        public MobilePhone() : base() 
+        public MobilePhone() : base()
         {
-            Model = String.Empty;
+            Model = string.Empty;
         }
-        public MobilePhone(int functionsNumber,string model) : base(functionsNumber) 
-        { 
+        public MobilePhone(int functionsNumber, string model) : base(functionsNumber)
+        {
             Model = model;
         }
 

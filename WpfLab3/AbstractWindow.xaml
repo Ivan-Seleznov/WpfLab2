@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfLab2.AbstractWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLab2"
+        mc:Ignorable="d"
+        Title="AbstractWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="ListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,128"/>
+        <Button Name="CalculateButton" Content="Розрахувати" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Height="25" Width="142" Click="CalculateButton_Click"/>
+        <TextBox Name="ArraySize" HorizontalAlignment="Left" Margin="10,395,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Кількість елементів масиву" HorizontalAlignment="Left" Margin="2,369,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.311,0.867"/>
+        <Label Content="Серендя вартість" HorizontalAlignment="Left" Margin="347,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.311,0.867"/>
+        <Label Name="AverageCost" Content="0" HorizontalAlignment="Left" Margin="347,355,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.311,0.867"/>
+
+    </Grid>
+</Window>
